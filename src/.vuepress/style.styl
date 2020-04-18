@@ -1,0 +1,43 @@
+@import "override.styl"
+
+html,body
+  background $backgroundColor
+
+.navbar
+  background $backgroundColor
+
+.sidebar
+  background $backgroundColor
+
+.search-box input
+  background transparent
+
+::-webkit-scrollbar  //滚动条的宽度
+  width 5px
+  height 15px
+
+
+::-webkit-scrollbar-thumb  //滚动条的设置
+  background-color $accentColor
+  min-height 15px
+  border-radius 5px
+  &:hover
+    background-color darken($accentColor,20%)
+
+.action-button
+  width 10rem
+
+.custom-block
+  border-color $accentColor
+
+.content h1,h2,h3,h4,h5
+  color: $titleColor
+
+.content a:not(.header-anchor)
+  color $linkColor
+
+.custom-block-title
+  display none
+
+.navbar .links
+  right 5rem

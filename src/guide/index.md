@@ -1,0 +1,1 @@
+<redirect to="./file/open-file"/>
