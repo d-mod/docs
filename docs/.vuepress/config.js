@@ -128,8 +128,8 @@ function featuresBar(changelog) {
 
 module.exports={
     title: "ExtractorSharp",
-    base:"/docs/",
-    dest:"./docs/.vuepress/dist",
+    base:"/",
+    dest:"./dist",
     themeConfig: {
         sidebar: {
             "/guide/": guideBar({
