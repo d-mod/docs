@@ -128,7 +128,7 @@ function featuresBar(changelog) {
 
 module.exports={
     title: "ExtractorSharp",
-    base:"/",
+    base:"/docs",
     dest:"docs/",
     themeConfig: {
         sidebar: {
