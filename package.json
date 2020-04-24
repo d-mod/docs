@@ -3,8 +3,8 @@
   "version": "1.7.1",
   "description": "webpack plugin",
   "scripts": {
-    "build": "vuepress build src",
-    "dev": "vuepress dev src"
+    "build": "vuepress build docs",
+    "dev": "vuepress dev docs"
   },
   "author": "Kritsu",
   "license": "MIT",
