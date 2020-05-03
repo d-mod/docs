@@ -42,7 +42,7 @@ function faqBar({basic,dress,program}) {
     ]
 }
 
-function guideBar({file,sprite,command,plugin,other}) {
+function guideBar({file,sprite,command,plugin,other,developer}) {
     return [
         {
             title: file,
@@ -97,6 +97,13 @@ function guideBar({file,sprite,command,plugin,other}) {
             ]
         },
         {
+            title: developer,
+            collapsable: true,
+            children: [
+                "developer/command"
+            ]
+        },
+        {
             title: other,
             collapsable: true,
             children: [
@@ -138,6 +145,7 @@ module.exports={
                 command: "命令",
                 other: "其他",
                 plugin: "插件",
+                developer: "开发者",
             }),
             "/feature/": featuresBar("历史版本"),
             "/faq/": faqBar({
