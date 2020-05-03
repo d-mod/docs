@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用命令行 | ExtractorSharp</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.865acdde.css" as="style"><link rel="preload" href="/assets/js/app.46a3e592.js" as="script"><link rel="preload" href="/assets/js/63.c5e05d9a.js" as="script"><link rel="prefetch" href="/assets/js/10.5a29b27d.js"><link rel="prefetch" href="/assets/js/11.8ebbf8d4.js"><link rel="prefetch" href="/assets/js/12.bca108c6.js"><link rel="prefetch" href="/assets/js/13.3744fc27.js"><link rel="prefetch" href="/assets/js/14.52aa4574.js"><link rel="prefetch" href="/assets/js/15.bfdd8ff1.js"><link rel="prefetch" href="/assets/js/16.8285cdb1.js"><link rel="prefetch" href="/assets/js/17.e6f87585.js"><link rel="prefetch" href="/assets/js/18.da7bd663.js"><link rel="prefetch" href="/assets/js/19.47887421.js"><link rel="prefetch" href="/assets/js/2.1f8338d0.js"><link rel="prefetch" href="/assets/js/20.df6ffac4.js"><link rel="prefetch" href="/assets/js/21.0be8272c.js"><link rel="prefetch" href="/assets/js/22.9f7f0cfe.js"><link rel="prefetch" href="/assets/js/23.e520817d.js"><link rel="prefetch" href="/assets/js/24.fac2dd84.js"><link rel="prefetch" href="/assets/js/25.9872e9e5.js"><link rel="prefetch" href="/assets/js/26.92e00a5b.js"><link rel="prefetch" href="/assets/js/27.6560e245.js"><link rel="prefetch" href="/assets/js/28.9d1d9d15.js"><link rel="prefetch" href="/assets/js/29.c6f9a10e.js"><link rel="prefetch" href="/assets/js/3.7bd03351.js"><link rel="prefetch" href="/assets/js/30.60416fdb.js"><link rel="prefetch" href="/assets/js/31.b410a7f2.js"><link rel="prefetch" href="/assets/js/32.49dd0094.js"><link rel="prefetch" href="/assets/js/33.aaccfb63.js"><link rel="prefetch" href="/assets/js/34.180a2633.js"><link rel="prefetch" href="/assets/js/35.7b4688e5.js"><link rel="prefetch" href="/assets/js/36.ef603828.js"><link rel="prefetch" href="/assets/js/37.4a1d85c0.js"><link rel="prefetch" href="/assets/js/38.211a6c24.js"><link rel="prefetch" href="/assets/js/39.51bc926a.js"><link rel="prefetch" href="/assets/js/4.8aae552f.js"><link rel="prefetch" href="/assets/js/40.4dad0c57.js"><link rel="prefetch" href="/assets/js/41.6973d42e.js"><link rel="prefetch" href="/assets/js/42.42c4403b.js"><link rel="prefetch" href="/assets/js/43.86d44d37.js"><link rel="prefetch" href="/assets/js/44.08c70036.js"><link rel="prefetch" href="/assets/js/45.9f16e288.js"><link rel="prefetch" href="/assets/js/46.52acbb3b.js"><link rel="prefetch" href="/assets/js/47.f75d0dbb.js"><link rel="prefetch" href="/assets/js/48.7b42dc9d.js"><link rel="prefetch" href="/assets/js/49.11750415.js"><link rel="prefetch" href="/assets/js/5.6f5fe443.js"><link rel="prefetch" href="/assets/js/50.5feb0e77.js"><link rel="prefetch" href="/assets/js/51.c8daace7.js"><link rel="prefetch" href="/assets/js/52.5a41ca41.js"><link rel="prefetch" href="/assets/js/53.dfc65916.js"><link rel="prefetch" href="/assets/js/54.5109c563.js"><link rel="prefetch" href="/assets/js/55.2d5e4e31.js"><link rel="prefetch" href="/assets/js/56.b996319c.js"><link rel="prefetch" href="/assets/js/57.76e92146.js"><link rel="prefetch" href="/assets/js/58.56efac77.js"><link rel="prefetch" href="/assets/js/59.fed82509.js"><link rel="prefetch" href="/assets/js/6.bd894c3a.js"><link rel="prefetch" href="/assets/js/60.546e4857.js"><link rel="prefetch" href="/assets/js/61.b16ec95c.js"><link rel="prefetch" href="/assets/js/62.30ac9fd4.js"><link rel="prefetch" href="/assets/js/64.c4d85b53.js"><link rel="prefetch" href="/assets/js/65.5f3f5fe4.js"><link rel="prefetch" href="/assets/js/66.4a829ef5.js"><link rel="prefetch" href="/assets/js/67.386d467f.js"><link rel="prefetch" href="/assets/js/68.4deaf09b.js"><link rel="prefetch" href="/assets/js/69.41125181.js"><link rel="prefetch" href="/assets/js/7.6b410086.js"><link rel="prefetch" href="/assets/js/70.a7048d03.js"><link rel="prefetch" href="/assets/js/71.45d7957f.js"><link rel="prefetch" href="/assets/js/72.8f483a26.js"><link rel="prefetch" href="/assets/js/8.a86621aa.js"><link rel="prefetch" href="/assets/js/9.de00b51c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.865acdde.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">ExtractorSharp</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/feature/" class="nav-link">版本</a></div><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">指南</a></div><div class="nav-item"><a href="/faq/" class="nav-link">常见问题</a></div><div class="nav-item"><a href="/example/" class="nav-link">教程示例</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/feature/" class="nav-link">版本</a></div><div class="nav-item"><a href="/guide/" class="nav-link router-link-active">指南</a></div><div class="nav-item"><a href="/faq/" class="nav-link">常见问题</a></div><div class="nav-item"><a href="/example/" class="nav-link">教程示例</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>文件</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>贴图</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>命令</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>插件</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>开发者</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/guide/developer/command.html" class="active sidebar-link">使用命令行</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/developer/command.html#简述" class="sidebar-link">简述</a></li><li class="sidebar-sub-header"><a href="/guide/developer/command.html#语言快速入门" class="sidebar-link">语言快速入门</a></li><li class="sidebar-sub-header"><a href="/guide/developer/command.html#示例" class="sidebar-link">示例</a></li><li class="sidebar-sub-header"><a href="/guide/developer/command.html#内置命令" class="sidebar-link">内置命令</a></li></ul></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>其他</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="使用命令行"><a href="#使用命令行" class="header-anchor">#</a> 使用命令行</h1> <h2 id="简述"><a href="#简述" class="header-anchor">#</a> 简述</h2> <p>ES 内置了一门简单的语言, 可以比较高自由度地精细地操控每一个功能.</p> <p>调用方式为</p> <div class="language-bash extra-class"><pre class="language-bash"><code>./ExtractorSharp.exe -m <span class="token operator">&lt;</span>命令<span class="token operator">&gt;</span>
+</code></pre></div><div class="warning custom-block"><p class="custom-block-title">WARNING</p> <ul><li>使用本功能需要对任意 <em>C 系编程语言</em> 和 <em>Windows 命令行</em> 有一些了解, 并且以下文档默认读者了解这些.</li> <li>本功能尚不完善, 可能会有未知 bug.</li> <li>本功能可能会快速迭代, 无法保证文档实时更新, 但尽量保证向后兼容.</li> <li>相关代码在<code>ExtractorSharp/Core/CommandParser.cs</code>, 一切以此为准</li></ul></div> <p><em>最近更新: 2020/05/03</em></p> <h2 id="语言快速入门"><a href="#语言快速入门" class="header-anchor">#</a> 语言快速入门</h2> <p>此语言非常简略, 大部分时候形如:</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token operator">|</span>toArray<span class="token operator">|</span>toInt<span class="token operator">|</span>asVar<span class="token operator">|</span>a<span class="token punctuation">;</span>
+<span class="token number">1</span><span class="token operator">|</span>toInt<span class="token operator">|</span>addOne<span class="token operator">|</span>addOne<span class="token operator">|</span>addOne<span class="token operator">|</span>asVar<span class="token operator">|</span>b<span class="token punctuation">;</span>
+<span class="token operator">|</span>useVar<span class="token operator">|</span>b<span class="token operator">|</span>addOne<span class="token punctuation">;</span>
+
+@<span class="token punctuation">{</span>
+    replaceImage<span class="token punctuation">;</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>代码从左到右从上到下执行, 以<code>|</code>为分界符, <code>|</code>前的通常是操作数, 其后是命令, 代码行以分号结尾.</p> <h3 id="命令"><a href="#命令" class="header-anchor">#</a> 命令</h3> <p>这对应于 GO 的接口, 允许链式调用.</p> <div class="language-Python extra-class"><pre class="language-python"><code><span class="token number">1</span><span class="token operator">|</span>toInt<span class="token operator">|</span>addOne<span class="token operator">|</span>addOne<span class="token operator">|</span>addOne<span class="token punctuation">;</span>
+<span class="token operator">|</span>useVar<span class="token operator">|</span>b<span class="token operator">|</span>addOne<span class="token punctuation">;</span>
+</code></pre></div><p>可视为</p> <div class="language-Python extra-class"><pre class="language-python"><code><span class="token string">&quot;1&quot;</span><span class="token punctuation">.</span>toInt<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>addOne<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>addOne<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>addOne<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+b<span class="token punctuation">.</span>addOne<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>*所有的内置命令见<a href="/guide/developer/command.html#内置命令">下表</a>. *</p> <p>聪明的你一定发现<code>1</code>对应成了<code>&quot;1&quot;</code>, 请看<a href="#">数据类型</a>.</p> <h3 id="数据类型"><a href="#数据类型" class="header-anchor">#</a> 数据类型</h3> <p>语言基础数据类型仅有:</p> <ul><li>字符串, 写出来的默认就是字符串, 如<code>asdsdfgsd</code>, <code>字符串</code>, <code>123</code>, <code>987.123</code>. 只有字符串能够直接表示.</li> <li>整数, 整数只能通过命令构造, <code>123|toInt</code> =&gt; <code>&quot;123&quot;.toInt()</code>.</li> <li>数组, 允许任意类型数组, 但是原生的构造方法只有<code>1,2,3|toArray</code> =&gt; <code>&quot;1,2,3&quot;.split(',')</code>, 暂时不支持直接索引数组.</li></ul> <p>但是也支持</p> <ul><li>原生 C# 对象, 一般是调用 API 的返回值</li></ul> <h3 id="变量使用"><a href="#变量使用" class="header-anchor">#</a> 变量使用</h3> <p>构造变量使用<code>值|asVar|名</code>, 如<code>1|asVar|one</code>即<code>var one = 1</code>.<br>
+使用变量使用<code>|useVar|名</code>, 如<code>|useVar|one</code>即<code>$one</code>.</p> <p>变量总是全局的, 没有作用域, 变量可以重复构造, 即</p> <div class="language-Python extra-class"><pre class="language-python"><code><span class="token number">1</span><span class="token operator">|</span>asVar<span class="token operator">|</span>one<span class="token punctuation">;</span>
+one<span class="token operator">|</span>addOne<span class="token operator">|</span>asVar<span class="token operator">|</span>one<span class="token punctuation">;</span>
+<span class="token comment"># one -&gt; 2</span>
+</code></pre></div><div class="warning custom-block"><p class="custom-block-title">WARNING</p> <p>代码目前没有注释功能.</p></div> <p>变量使用过程允许使用 C# 变量的<code>字段/属性/方法</code>, 如</p> <div class="language-Python extra-class"><pre class="language-python"><code><span class="token number">1</span><span class="token operator">|</span>toInt<span class="token operator">|</span>asVar<span class="token operator">|</span>one<span class="token punctuation">;</span> <span class="token comment"># var one = int.Parse(&quot;1&quot;);</span>
+<span class="token operator">|</span>useVar<span class="token operator">|</span>one<span class="token punctuation">.</span>ToString<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment"># $one.ToString();</span>
+
+sprite_character_challenge2nd_gunner_launcher<span class="token punctuation">.</span>NPK<span class="token operator">|</span>LoadFile<span class="token operator">|</span>asVar<span class="token operator">|</span>albums<span class="token punctuation">;</span>
+<span class="token comment"># var albums =  LoadFile(&quot;sprite_character_challenge2nd_gunner_launcher.NPK&quot;);</span>
+<span class="token operator">|</span>useVar<span class="token operator">|</span>albums<span class="token punctuation">.</span>Length<span class="token punctuation">;</span> <span class="token comment"># $albums.Length;</span>
+</code></pre></div><div class="warning custom-block"><p class="custom-block-title">WARNING</p> <p>useVar 暂时不支持传参, 可以<code>a.ToString()</code>, 但是不能<code>b.GetValue(0)</code>.</p></div> <h3 id="流程控制"><a href="#流程控制" class="header-anchor">#</a> 流程控制</h3> <p>暂时没有判断, 只有一个<code>forEach</code>.</p> <h4 id="foreach"><a href="#foreach" class="header-anchor">#</a> forEach:</h4> <div class="language-Python extra-class"><pre class="language-python"><code>sprite_character_challenge2nd_gunner_launcher<span class="token punctuation">.</span>NPK<span class="token operator">|</span>LoadFile<span class="token operator">|</span>asVar<span class="token operator">|</span>albums<span class="token punctuation">;</span>
+<span class="token operator">|</span>useVar<span class="token operator">|</span>albums<span class="token operator">|</span>forEach<span class="token operator">|</span>album<span class="token punctuation">{</span>
+    <span class="token operator">|</span>useVar<span class="token operator">|</span>album<span class="token punctuation">.</span>Name<span class="token operator">|</span>message<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>相当于</p> <div class="language-python extra-class"><pre class="language-python"><code>var albums <span class="token operator">=</span> LoadFile<span class="token punctuation">(</span><span class="token string">&quot;sprite_character_challenge2nd_gunner_launcher.NPK&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+albums<span class="token punctuation">.</span>forEach<span class="token punctuation">(</span>album <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    message<span class="token punctuation">(</span>album<span class="token punctuation">.</span>Name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment"># 或者</span>
+foreach <span class="token punctuation">(</span>var album <span class="token keyword">in</span> albums<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    message<span class="token punctuation">(</span>album<span class="token punctuation">.</span>Name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="调用-es-action"><a href="#调用-es-action" class="header-anchor">#</a> 调用 ES Action</h3> <p>ES 将各个动作抽象为 Action, 这也是本项目得以快速使用的重要原因.</p> <h4 id="action"><a href="#action" class="header-anchor">#</a> Action</h4> <p>Action 继承自<code>ICommand</code>, 包含</p> <div class="language-C# extra-class"><pre class="language-text"><code>string Name { get; }
+
+/// &lt;summary&gt;
+///     可否撤销
+/// &lt;/summary&gt;
+/// &lt;returns&gt;&lt;/returns&gt;
+bool CanUndo { get; }
+
+/// &lt;summary&gt;
+///     是否对文件有实质影响
+/// &lt;/summary&gt;
+/// &lt;returns&gt;&lt;/returns&gt;
+bool IsChanged { get; }
+
+/// &lt;summary&gt;
+///     执行
+/// &lt;/summary&gt;
+void Do(params object[] args);
+
+/// &lt;summary&gt;
+///     撤销
+/// &lt;/summary&gt;
+void Undo();
+
+/// &lt;summary&gt;
+///     重做
+/// &lt;/summary&gt;
+void Redo();
+</code></pre></div><p>使用 Action 的过程即拼凑 args 数组, 然后调用 Do.
+所有的 Action 可以在 <a href="/https://github.com/myuanz/ExtractorSharp/blob/master/ExtractorSharp/Program.cs#L98">Github</a> 看到, 欲知传参方式则直接跳转对应文件查看 Do 的处理过程即可, 更详细的 API 文档待完善.</p> <p>这里推荐下函数断点来查看参数.</p> <p><em>TODO: 在界面一键导出一组动作</em></p> <h4 id="语法"><a href="#语法" class="header-anchor">#</a> 语法</h4> <p>调用 Action 的语法为:</p> <div class="language-Python extra-class"><pre class="language-python"><code>@<span class="token punctuation">{</span>
+    saveImage<span class="token punctuation">;</span>
+    <span class="token operator">|</span>useVar<span class="token operator">|</span>album<span class="token punctuation">;</span>
+    <span class="token number">1</span><span class="token operator">|</span>toInt<span class="token punctuation">;</span>
+    <span class="token number">1</span><span class="token operator">|</span>toArray<span class="token operator">|</span>toInt<span class="token punctuation">;</span>
+    Z<span class="token punctuation">:</span>\output<span class="token punctuation">;</span>
+    <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+    <span class="token number">0</span><span class="token operator">|</span>toInt<span class="token punctuation">;</span>
+    <span class="token number">0</span><span class="token operator">|</span>toInt<span class="token punctuation">;</span>
+    false<span class="token operator">|</span>toBool<span class="token punctuation">;</span>
+    <span class="token operator">|</span>asNull<span class="token punctuation">;</span>
+    true<span class="token operator">|</span>toBool<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>saveImage</code>是 ES 的一个动作, 用于导出<code>album</code>的所有贴图, 其余即按顺序填充函数参数.</p> <p>一个文件对应许多<code>album</code>, <code>albums</code>即打开页面后左侧的那块区域中的<code>.img</code>, 见<a href="http://localhost:8080/guide/file/delete-file.html#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6" target="_blank" rel="noopener noreferrer">此处<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="示例"><a href="#示例" class="header-anchor">#</a> 示例</h2> <p>本示例演示了导出一个 NPK 文件的贴图后, 将贴图内容置换为随机色块后再另存为新的 NPK 文件的流程.</p> <div class="language-powershell extra-class"><pre class="language-powershell"><code><span class="token variable">$cmd_export</span> = @<span class="token string">&quot;
+D:\WeGameApps\地下城与勇士\ImagePacks2\sprite_character_challenge2nd_gunner_launcher.NPK|LoadFile|asVar|albums;
+useVar|albums|forEach|album|{
+	@{
+		saveImage; 
+		|useVar|album;
+		1|toInt;
+		1|toArray|toInt;
+		Z:\output;
+		&quot;</span><span class="token string">&quot;;
+		0|toInt;
+		0|toInt;
+		false|toBool;
+		|asNull;
+		true|toBool;
+	}
+}
+0|exit;
+&quot;</span>@
+
+<span class="token variable">$cmd_replace_and_save</span> = @<span class="token string">&quot;
+D:\WeGameApps\地下城与勇士\ImagePacks2\sprite_character_challenge2nd_gunner_launcher.NPK|LoadFile|asVar|albums;
+useVar|albums|forEach|album|{
+	@{
+		replaceImage; 
+		0|toInt;
+		false|toBool;
+		2|toInt;
+		Z:\output\|Concat|useVar|album.Name;
+		|useVar|album;
+		|asNull;
+	}
+}
+
+@{
+	saveImg; 
+	|useVar|albums;
+	Z:\output\|Concat|sprite_character_challenge2nd_gunner_launcher.NPK;
+	2|toInt;
+}
+0|exit;
+
+&quot;</span>@
+
+C:\Users\Administrator\Desktop\ExtractorSharp\ExtractorSharp\bin\Release\ExtractorSharp<span class="token punctuation">.</span>exe <span class="token operator">-</span>m  <span class="token variable">$cmd_export</span> <span class="token punctuation">|</span> <span class="token function">Wait-Process</span>
+python <span class="token punctuation">.</span>\img_to_black<span class="token punctuation">.</span>py 
+C:\Users\Administrator\Desktop\ExtractorSharp\ExtractorSharp\bin\Release\ExtractorSharp<span class="token punctuation">.</span>exe <span class="token operator">-</span>m  <span class="token variable">$cmd_replace_and_save</span> <span class="token punctuation">|</span> <span class="token function">Wait-Process</span>
+</code></pre></div><div class="language-Python extra-class"><pre class="language-python"><code><span class="token comment"># img_to_black.py</span>
+<span class="token keyword">import</span> cv2
+<span class="token keyword">import</span> os
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+
+<span class="token keyword">for</span> path <span class="token keyword">in</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span><span class="token string">&quot;./&quot;</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>isdir<span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> filename <span class="token keyword">in</span> os<span class="token punctuation">.</span>listdir<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f&quot;./</span><span class="token interpolation"><span class="token punctuation">{</span>path<span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            filepath <span class="token operator">=</span> <span class="token string-interpolation"><span class="token string">f&quot;./</span><span class="token interpolation"><span class="token punctuation">{</span>path<span class="token punctuation">}</span></span><span class="token string">/</span><span class="token interpolation"><span class="token punctuation">{</span>filename<span class="token punctuation">}</span></span><span class="token string">&quot;</span></span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>filepath<span class="token punctuation">)</span>
+            img <span class="token operator">=</span> cv2<span class="token punctuation">.</span>imread<span class="token punctuation">(</span>filepath<span class="token punctuation">)</span>
+            img<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>randint<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            cv2<span class="token punctuation">.</span>imwrite<span class="token punctuation">(</span>filepath<span class="token punctuation">,</span> img<span class="token punctuation">)</span>
+</code></pre></div><h2 id="内置命令"><a href="#内置命令" class="header-anchor">#</a> 内置命令</h2> <div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>更多内置命令的示例参见<code>ExtractorSharp.UnitTest/Command/UnitTest1.cs</code></p></div> <div class="danger custom-block"><p class="custom-block-title">WARNING</p> <p>以下示例都没有添加分号[;]作为结尾</p></div> <h3 id="asnull"><a href="#asnull" class="header-anchor">#</a> asNull</h3> <p>获得一个<code>null</code></p> <p>例:</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token number">1</span><span class="token operator">|</span>asNull <span class="token comment"># null</span>
+<span class="token operator">|</span>asNull <span class="token comment"># null</span>
+</code></pre></div><h3 id="addone"><a href="#addone" class="header-anchor">#</a> addOne</h3> <p>将前值喜加一</p> <p>例:</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token number">1</span><span class="token operator">|</span>toInt<span class="token operator">|</span>addOne <span class="token comment"># 2</span>
+<span class="token number">1</span><span class="token operator">|</span>toInt<span class="token operator">|</span>addOne<span class="token operator">|</span>addOne <span class="token comment"># 3</span>
+</code></pre></div><h3 id="tobool"><a href="#tobool" class="header-anchor">#</a> toBool</h3> <p>将前值转换为逻辑型.
+判断逻辑为<code>arg.CurrentArg as string != &quot;false&quot;</code>
+所以除了<code>&quot;false&quot;</code>, 其余全是<code>true</code></p> <p>例:</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token number">1</span><span class="token operator">|</span>toBool <span class="token comment"># true</span>
+<span class="token number">0</span><span class="token operator">|</span>toBool <span class="token comment"># true</span>
+<span class="token number">1</span><span class="token operator">|</span>asNull<span class="token operator">|</span>toBool <span class="token comment"># true</span>
+
+false<span class="token operator">|</span>asNull <span class="token comment"># false</span>
+</code></pre></div><h3 id="toarray"><a href="#toarray" class="header-anchor">#</a> toArray</h3> <p>将数据转换到数组, 要求数据以逗号分隔.</p> <p>例:</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token operator">|</span>toArray <span class="token comment"># [1, 2, 3]</span>
+</code></pre></div><h3 id="toint"><a href="#toint" class="header-anchor">#</a> toInt</h3> <p>字符串会转换为整数, 字符串数组会转换为整数数组</p> <h3 id="loadfile"><a href="#loadfile" class="header-anchor">#</a> LoadFile</h3> <p>导入一个文件, 由于此动作并未在 Action 中定义, 因此我将其加入了语言内置命令</p> <p>例:</p> <div class="language-python extra-class"><pre class="language-python"><code>sprite_character_challenge2nd_gunner_launcher<span class="token punctuation">.</span>NPK<span class="token operator">|</span>LoadFile<span class="token punctuation">;</span> <span class="token comment"># 返回 Album[]</span>
+</code></pre></div><h3 id="exit"><a href="#exit" class="header-anchor">#</a> exit</h3> <p>以某个状态码退出</p> <p>例:</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token number">0</span><span class="token operator">|</span>exit <span class="token comment"># Environment.Exit(0);</span>
+<span class="token number">1</span><span class="token operator">|</span>toInt<span class="token operator">|</span>exit <span class="token comment"># Environment.Exit(1);</span>
+</code></pre></div><h3 id="message"><a href="#message" class="header-anchor">#</a> message</h3> <p>弹出一个消息框用于提示.</p> <p>例:</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token number">1</span><span class="token operator">|</span>message <span class="token comment"># MessageBox.Show(&quot;1&quot;);</span>
+</code></pre></div><h3 id="asvar"><a href="#asvar" class="header-anchor">#</a> asVar</h3> <p>构造变量, 详细见上部<a href="#">变量使用</a></p> <h3 id="usevar"><a href="#usevar" class="header-anchor">#</a> useVar</h3> <p>使用变量, 详细见上部<a href="#">变量使用</a></p> <h3 id="foreach-2"><a href="#foreach-2" class="header-anchor">#</a> forEach</h3> <p>循环, 详细见上部<a href="#">流程控制</a></p> <h3 id><a href="#" class="header-anchor">#</a> @</h3> <p>调用 Action, 详细见上部<a href="#">调用 ES Action</a></p> <h3 id="concat"><a href="#concat" class="header-anchor">#</a> Concat</h3> <p>连接字符串或者数组.</p> <p>例:</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token number">6</span><span class="token operator">|</span>Concat<span class="token operator">|</span><span class="token number">1</span> <span class="token comment"># &quot;61&quot;</span>
+<span class="token number">1</span><span class="token operator">|</span>asVar<span class="token operator">|</span>a
+<span class="token operator">|</span>useVar<span class="token operator">|</span>a<span class="token operator">|</span>Concat<span class="token operator">|</span><span class="token number">2</span> <span class="token comment"># &quot;62&quot;</span>
+
+<span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token operator">|</span>toArray<span class="token operator">|</span>asVar<span class="token operator">|</span>a
+<span class="token operator">|</span>useVar<span class="token operator">|</span>a<span class="token operator">|</span>toInt<span class="token operator">|</span>Concat<span class="token operator">|</span><span class="token number">4</span><span class="token operator">|</span>toInt<span class="token operator">|</span>addOne<span class="token operator">|</span>addOne <span class="token comment"># [1, 2, 3, 6]</span>
+</code></pre></div><div class="warning custom-block"><p class="custom-block-title">WARNING</p> <p>Concat 在连接向量和标量的时候, 只允许左侧向量, 右侧标量, 因此</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token number">4</span><span class="token operator">|</span>toInt<span class="token operator">|</span>addOne<span class="token operator">|</span>addOne<span class="token operator">|</span>Concat<span class="token operator">|</span>useVar<span class="token operator">|</span>a<span class="token operator">|</span>toInt
+</code></pre></div><p>不等于<code>[6, 1, 2, 3]</code></p></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/guide/plugin/cleaner.html" class="prev">
+          文件清理
+        </a></span> <span class="next"><a href="/guide/other/hot-key.html">
+          快捷键
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.46a3e592.js" defer></script><script src="/assets/js/63.c5e05d9a.js" defer></script>
+  </body>
+</html>
