@@ -313,6 +313,20 @@ sprite_character_challenge2nd_gunner_launcher.NPK|LoadFile; # 返回 Album[]
 ### useVar
 使用变量, 详细见上部[变量使用](#)
 
+### asEnvVar
+设置环境变量, 用法同`asVar`
+
+### useEnvVar
+使用环境变量, 用法同`useVar`
+
+例: 
+```C#
+Assert.AreEqual(null, commandParser.InvokeToken("|useEnvVar|testEnv;"));
+Assert.AreEqual("qaerfqaw", commandParser.InvokeToken("qaerfqaw|asEnvVar|testEnv;"));
+Assert.AreEqual("qaerfqaw", commandParser.InvokeToken("|useEnvVar|testEnv;"));
+Assert.AreEqual("qaerfqaw", Environment.GetEnvironmentVariable("testEnv"));
+```
+
 ### forEach
 循环, 详细见上部[流程控制](#)
 
