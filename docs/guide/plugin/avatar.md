@@ -2,7 +2,7 @@
 
 纸娃娃系统是试衣间插件的一部分
 
-是一个无需下载的web程序。[访问地址](https://kritsu.net/avatar)
+是一个无需下载的web程序。[访问地址](https://avatar.kritsu.net/)
 
 ![](../../images/avatar-html.png)
 
