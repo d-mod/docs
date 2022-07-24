@@ -8,7 +8,7 @@
 
 [ExtractorSharp](../feature/downloads.md)
 
-[ExtractorSharp 纸娃娃](https://kritsu.net/avatar/)
+[ExtractorSharp 纸娃娃](https://avatar.kritsu.net/)
 
 首先打开纸娃娃
 
