@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[49],{394:function(t,n,s){"use strict";s.r(n);var e=s(0),r=Object(e.a)({},(function(){var t=this._self._c;return t("div",{staticClass:"content"},[t("redirect",{attrs:{to:"./dress"}})],1)}),[],!1,null,null,null);n.default=r.exports}}]);

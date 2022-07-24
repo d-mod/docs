@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[51],{397:function(t,n,a){"use strict";a.r(n);var e=a(0),s=Object(e.a)({},(function(){var t=this._self._c;return t("div",{staticClass:"content"},[t("redirect",{attrs:{to:"pet-and-aura"}})],1)}),[],!1,null,null,null);n.default=s.exports}}]);

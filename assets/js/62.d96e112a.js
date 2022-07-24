@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[62],{391:function(t,n,s){"use strict";s.r(n);var e=s(0),o=Object(e.a)({},(function(){var t=this._self._c;return t("div",{staticClass:"content"},[t("redirect",{attrs:{to:"./downloads"}})],1)}),[],!1,null,null,null);n.default=o.exports}}]);
